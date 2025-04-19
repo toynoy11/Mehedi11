@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 200%;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3ef;
+  color: #000000;
+}
+
+h1 {
+  font-size: 200%;
+  font-weight: bold;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.student-id {
+  font-family: Arial, sans-serif;
+}
+
+.course span {
+  color: rgb(87, 66, 44); 
+}
+
+.profile-pic {
+  float: center;
+  border: 5px groove #46fcf6;
+  padding: 20px;
+  margin-left: 20px;
+  width: 180px;
+  max-width: 100%;
+}
+
+.personal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.personal-table th,
+.personal-table td {
+  border: 1px solid #8eecff;
+  padding: 12px;
+  border-color: black;
+}
+
+.personal-table th {
+  text-align: center;
+  font-weight: bold;
+  border-color: black;
+  background-color: #02fcf4; /* Coffee-inspired tan */
+}
+
+.personal-table td {
+  background-color: #aaccdf;
+  border-color: black;
+}

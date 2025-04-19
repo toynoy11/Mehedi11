@@ -1,0 +1,120 @@
+/* Author: Gregory Tinashe Mutumwa, Aaron Han Xian LEONG
+    Purpose: CSS for individual profile pages
+ */
+ 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f3ef;
+    color: #3e2f1c;
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: bold;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: auto;
+}
+
+.student-id {
+    font-family: Arial, sans-serif;
+}
+
+.course span {
+    color: rgb(87, 66, 44); /* Dark brown RGB */
+}
+
+.profile-pic {
+    display: block;
+    border: 5px groove #7b5e42;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    width: 200px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.personal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.personal-table th,
+.personal-table td {
+    border: 1px solid #d3c4b3;
+    padding: 12px;
+}
+
+.personal-table th {
+    text-align: center;
+    font-weight: bold;
+    background-color: #c7a17a; /* Coffee-inspired tan */
+}
+
+.personal-table td {
+    background-color: #f7efe8;
+}
+
+/* Aaron's profile specific styles */
+.aaron-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.aaron-heading {
+    color: #3e2723;
+    border-bottom: 2px solid #c7a17a;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Email button styles */
+.email-button {
+    display: inline-block;
+    background-color: #3e2723;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.email-button:hover {
+    background-color: #5D4037;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.email-button i {
+    margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+    
+    .profile-pic {
+        width: 150px;
+    }
+    
+    .personal-table th,
+    .personal-table td {
+        padding: 8px;
+    }
+}
