@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Go Coffee - Enhancements</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/dropdown.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <style>
+        .enhancement-section {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .enhancement-card {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 1.5em;
+            margin-bottom: 2em;
+            border-left: 5px solid #3e2723;
+        }
+        
+        .enhancement-card h3 {
+            color: #3e2723;
+            margin-top: 0;
+        }
+        
+        .enhancement-card p {
+            line-height: 1.6;
+        }
+        
+        .enhancement-card .code-example {
+            background-color: #f0f0f0;
+            padding: 1em;
+            border-radius: 5px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 1em 0;
+        }
+        
+        .enhancement-card .implementation {
+            margin-top: 1em;
+            font-weight: bold;
+        }
+        
+        .enhancement-card .implementation a {
+            color: #3e2723;
+            text-decoration: underline;
+        }
+        
+        .enhancement-card .contributor {
+            font-style: italic;
+            color: #666;
+            margin-top: 0.5em;
+        }
+        
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            justify-content: center;
+            margin-top: 2em;
+        }
+        
+        .team-member {
+            text-align: center;
+            width: 200px;
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3e2723;
+        }
+    </style>
+</head>
+<body>
+      <header style="width: 100vw; background-color: #3e2723; color: white; padding: 1em 2em; box-sizing: border-box; position: relative;">
+    <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto;">
+        
+        <!-- Logo and Brand Name -->
+        <a href="main_index.html" style="text-decoration: none; color: white; display: flex; align-items: center;">
+            <img src="images/logo.png" alt="Brew & Go Logo" style="height: 80px; margin-right: 15px;">
+            <span style="font-size: 2.5em; font-weight: bold;">Brew & Go. Coffee</span>
+        </a>
+    
+        <!-- Navigation Links -->
+        <nav style="display: flex; gap: 1.5em;">
+            <div class="nav-dropdown">
+                <a href="products.html" style="color: white; text-decoration: none; font-weight: bold;">Products</a>
+                <div class="dropdown-content">
+                    <a href="hotbeverages.html">Hot Beverages</a>
+                    <a href="non_coffee.html">Non-Coffee Drinks</a>
+                    <a href="artisan_brew.html">Artisan Brews</a>
+                    <a href="basic_brew.html">Basic Brews</a>
+                </div>
+            </div>
+            <a href="registration.html" style="color: white; text-decoration: none; font-weight: bold;">Register</a>
+            <a href="login.html" style="color: white; text-decoration: none; font-weight: bold;">Login</a>
+            <a href="join_us.html" style="color: white; text-decoration: none; font-weight: bold;">Join Us</a>
+             <nav style="display: flex; gap: 1.5em;">
+              <div class="nav-dropdown">
+                  <a href="activities.html" style="color: white; text-decoration: none; font-weight: bold;">Activities</a>
+                  <div class="dropdown-content">
+                      <a href="current.html">Current</a>
+                      <a href="pass_activities.html">Pass Activities</a>
+                      <a href="coming_soon.html">Coming Soon</a>
+                      
+                  </div>
+              </div>
+            <div class="nav-dropdown">
+                <a href="profile.html" style="color: white; text-decoration: none; font-weight: bold;">Profile</a>
+                <div class="dropdown-content">
+                    <a href="profile_aaron.html">Aaron's Profile</a>
+                    <a href="profile_greg.html">Greg's Profile</a>
+                    <a href="profile_mehedi.html">Mehedi's Profile</a>
+                    <a href="profile_muzamil.html">Muzamil's Profile</a>
+                </div>
+            </div>
+        </nav>
+    
+    </div>
+    <!-- Page Title -->
+    <h1 style="text-align: center; color: white; margin-top: 1em; position: relative;">Enhancements<style>h1::after { display: none; }</style></h1>
+</header>
+
+<main>
+    <section class="enhancement-section">
+        <h2>Website Enhancements</h2>
+        <p>Our team has implemented several enhancements that go beyond the basic requirements of the assignment. These enhancements improve the user experience, add visual appeal, and demonstrate our technical skills in HTML and CSS.</p>
+        
+        <!-- Enhancement 1: Advanced Dropdown Navigation -->
+        <div class="enhancement-card">
+            <h3>1. Advanced Dropdown Navigation Menu</h3>
+            <p>We implemented an advanced dropdown navigation menu with smooth transitions and hover effects that goes beyond the basic navigation requirements.</p>
+            
+            <div class="code-example">
+                <pre>/* Dropdown Menu Styles */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3e2723;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 4px;
+    margin-top: 5px;
+    left: 0;
+    padding: 8px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}</pre>
+            </div>
+            
+            <p>This enhancement includes:</p>
+            <ul>
+                <li>Smooth fade-in/fade-out transitions using CSS opacity and visibility properties</li>
+                <li>Dropdown indicator arrows using CSS pseudo-elements</li>
+                <li>Extended hover area to prevent accidental dropdown closing</li>
+                <li>Consistent styling across all pages</li>
+            </ul>
+            
+            <p class="implementation">Implementation: <a href="main_index.html">View on Homepage</a></p>
+            <p class="contributor">Contributed by: Team</p>
+        </div>
+        
+        <!-- Enhancement 2: Form Styling with Icons -->
+        <div class="enhancement-card">
+            <h3>2. Enhanced Form Styling with Icons and Animations</h3>
+            <p>We created sophisticated form styling that includes icon integration, input field animations, and visual feedback for users.</p>
+            
+            <div class="code-example">
+                <pre>.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon div {
+    position: relative;
+}
+
+.input-with-icon i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    transition: color 0.3s ease;
+}
+
+.input-with-icon input:focus + i {
+    color: var(--primary);
+}</pre>
+            </div>
+            
+            <p>This enhancement includes:</p>
+            <ul>
+                <li>Font Awesome icons integrated into form fields</li>
+                <li>Interactive hover and focus states with smooth transitions</li>
+                <li>Custom styling for form elements beyond basic HTML requirements</li>
+                <li>Visual feedback for required fields and form validation</li>
+                <li>Consistent styling across login, registration, and join us forms</li>
+            </ul>
+            
+            <p class="implementation">Implementation: <a href="login.html">View on Login Page</a> | <a href="registration.html">View on Registration Page</a> | <a href="join_us.html">View on Join Us Page</a></p>
+            <p class="contributor">Contributed by: Team</p>
+        </div>
+        
+        <!-- Enhancement 3: Interactive Card Components -->
+        <div class="enhancement-card">
+            <h3>3. Interactive Card Components with Hover Effects</h3>
+            <p>We designed interactive card components with sophisticated hover effects and transitions for product displays and team members.</p>
+            
+            <div class="code-example">
+                <pre>.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}</pre>
+            </div>
+            
+            <p>This enhancement includes:</p>
+            <ul>
+                <li>Subtle elevation effects on hover using transform and box-shadow</li>
+                <li>Smooth transitions between states</li>
+                <li>Consistent card design system across the website</li>
+                <li>Responsive card layouts that adapt to different screen sizes</li>
+            </ul>
+            
+            <p class="implementation">Implementation: <a href="products.html">View on Products Page</a></p>
+            <p class="contributor">Contributed by: Team</p>
+        </div>
+        
+        <!-- Enhancement 4: Advanced CSS Variables -->
+        <div class="enhancement-card">
+            <h3>4. CSS Variables for Consistent Theming</h3>
+            <p>We implemented CSS custom properties (variables) for consistent theming across the website, making it easy to maintain and update the design.</p>
+            
+            <div class="code-example">
+                <pre>:root {
+  --primary: #3E2723; /* Dark coffee bean */
+  --secondary: #5D4037; /* Medium roast */
+  --accent: #A1887F; /* Light latte */
+  --highlight: #6D4C41; /* Cappuccino foam */
+  --fresh: #4CAF50; /* Fresh green accent */
+  --background-section: #FFF3E0; /* Warm light coffee */
+  --border-accent: #BCAAA4; /* Muted clay tone */
+}</pre>
+            </div>
+            
+            <p>This enhancement includes:</p>
+            <ul>
+                <li>Centralized color scheme using CSS variables</li>
+                <li>Semantic naming conventions for colors and design elements</li>
+                <li>Easy maintenance and updates across the entire website</li>
+                <li>Consistent visual identity across all pages</li>
+            </ul>
+            
+            <p class="implementation">Implementation: Used throughout the website in all CSS files</p>
+            <p class="contributor">Contributed by: Team</p>
+        </div>
+        
+        <!-- Enhancement 5: Interactive Form Elements -->
+        <div class="enhancement-card">
+            <h3>5. Interactive Form Elements with Advanced Styling</h3>
+            <p>We created custom-styled form elements with interactive features that go beyond basic HTML form requirements.</p>
+            
+            <div class="code-example">
+                <pre>button[type="submit"] {
+  background-color: var(--fresh);
+  border: none;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+button[type="submit"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+button[type="submit"]:hover::before {
+  left: 100%;
+}</pre>
+            </div>
+            
+            <p>This enhancement includes:</p>
+            <ul>
+                <li>Custom button styling with animated hover effects</li>
+                <li>Form validation styling with visual feedback</li>
+                <li>Custom checkbox and radio button styling</li>
+                <li>Animated focus states for improved accessibility</li>
+            </ul>
+            
+            <p class="implementation">Implementation: <a href="join_us.html">View on Join Us Page</a> | <a href="enquiry.html">View on Enquiry Page</a></p>
+            <p class="contributor">Contributed by: Team</p>
+        </div>
+        
+        <!-- Enhancement 6: Responsive Layout Techniques -->
+        <div class="enhancement-card">
+            <h3>6. Advanced Responsive Layout Techniques</h3>
+            <p>We implemented sophisticated responsive layout techniques using CSS Grid and Flexbox that go beyond basic responsive requirements.</p>
+            
+            <div class="code-example">
+                <pre>.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}</pre>
+            </div>
+            
+            <p>This enhancement includes:</p>
+            <ul>
+                <li>CSS Grid with auto-fit and minmax for responsive card layouts</li>
+                <li>Flexbox for complex component layouts</li>
+                <li>Mobile-first approach with progressive enhancement</li>
+                <li>Responsive typography using relative units</li>
+            </ul>
+            
+            <p class="implementation">Implementation: Used throughout the website, especially on <a href="products.html">Products Page</a> and <a href="main_index.html">Homepage</a></p>
+            <p class="contributor">Contributed by: Team</p>
+        </div>
+        
+        <!-- Enhancement 7: Footer with Newsletter Signup -->
+        <div class="enhancement-card">
+            <h3>7. Enhanced Footer with Newsletter Signup</h3>
+            <p>We created a comprehensive footer with multiple sections and a newsletter signup form that goes beyond basic footer requirements.</p>
+            
+            <div class="code-example">
+                <pre>footer {
+  background-color: #3e2723;
+  color: white;
+  padding: 2em 0;
+  margin-top: 2em;
+  width: 100%;
+}
+
+footer div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  padding: 0 2em;
+}</pre>
+            </div>
+            
+            <p>This enhancement includes:</p>
+            <ul>
+                <li>Multi-column footer layout using CSS Grid</li>
+                <li>Social media links with Font Awesome icons</li>
+                <li>Newsletter signup form with custom styling</li>
+                <li>Organized navigation links for improved site usability</li>
+            </ul>
+            
+            <p class="implementation">Implementation: Footer appears on all pages of the website</p>
+            <p class="contributor">Contributed by: Team</p>
+        </div>
+    </section>
+    
+    <section class="enhancement-section">
+        <h2>Our Team</h2>
+        <p>These enhancements were implemented by our dedicated team members:</p>
+        
+        <div class="team-section">
+            <div class="team-member">
+                <a href="profile_aaron.html">
+                    <img src="images/aaron.jpg" alt="Aaron's Profile Picture">
+                    <h3>Aaron</h3>
+                </a>
+            </div>
+            <div class="team-member">
+                <a href="profile_greg.html">
+                    <img src="images/greg.jpg" alt="Greg's Profile Picture">
+                    <h3>Greg</h3>
+                </a>
+            </div>
+            <div class="team-member">
+                <a href="profile_mehedi.html">
+                    <img src="images/mehedi.jpg" alt="Mehedi's Profile Picture">
+                    <h3>Mehedi</h3>
+                </a>
+            </div>
+            <div class="team-member">
+                <a href="profile_muzamil.html">
+                    <img src="images/muzamil.jpg" alt="Muzamil's Profile Picture">
+                    <h3>Muzamil</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer style="background-color: #3e2723; color: white; padding: 2em 0; margin-top: 2em; width: 100%;">
+  <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2em; padding: 0 2em;">
+    <!-- About Section -->
+    <div>
+      <h3 style="margin-bottom: 1em; font-size: 1.2em;">About Brew & Go</h3>
+      <p style="line-height: 1.6;">We are passionate about bringing quality coffee to coffee enthusiasts. Join our community to experience the best brews.</p>
+      <p style="margin-top: 1em;"><a href="mailto:hello@brewngo.coffee" style="color: #d7ccc8; text-decoration: none;">hello@brewngo.coffee</a></p>
+    </div>
+    
+    <!-- Quick Links -->
+    <div>
+      <h3 style="margin-bottom: 1em; font-size: 1.2em;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li><a href="main_index.html" style="color: #d7ccc8; text-decoration: none;">Home</a></li>
+        <li><a href="products.html" style="color: #d7ccc8; text-decoration: none;">Products</a></li>
+        <li><a href="hotbeverages.html" style="color: #d7ccc8; text-decoration: none;">Hot Beverages</a></li>
+        <li><a href="non_coffee.html" style="color: #d7ccc8; text-decoration: none;">Non-Coffee Drinks</a></li>
+        <li><a href="artisan_brew.html" style="color: #d7ccc8; text-decoration: none;">Artisan Brews</a></li>
+        <li><a href="basic_brew.html" style="color: #d7ccc8; text-decoration: none;">Basic Brews</a></li>
+      </ul>
+    </div>
+    
+    <!-- Member Area -->
+    <div>
+      <h3 style="margin-bottom: 1em; font-size: 1.2em;">Member Area</h3>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li><a href="registration.html" style="color: #d7ccc8; text-decoration: none;">Register</a></li>
+        <li><a href="login.html" style="color: #d7ccc8; text-decoration: none;">Login</a></li>
+        <li><a href="join_us.html" style="color: #d7ccc8; text-decoration: none;">Join Us</a></li>
+        <li><a href="profile.html" style="color: #d7ccc8; text-decoration: none;">Profile</a></li>
+        <li><a href="enquiry.html" style="color: #d7ccc8; text-decoration: none;">Make an Enquiry</a></li>
+        <li><a href="activities.html" style="color: #d7ccc8; text-decoration: none;">Activities</a></li>
+      </ul>
+    </div>
+    
+    <!-- Connect With Us -->
+    <div>
+      <h3 style="margin-bottom: 1em; font-size: 1.2em;">Connect With Us</h3>
+      <div style="display: flex; gap: 1em; margin-bottom: 1.5em;">
+        <!-- Social Media Icons -->
+        <a href="#" style="color: white; font-size: 1.5em; text-decoration: none;" title="Facebook">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="#" style="color: white; font-size: 1.5em; text-decoration: none;" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" style="color: white; font-size: 1.5em; text-decoration: none;" title="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" style="color: white; font-size: 1.5em; text-decoration: none;" title="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <p>Subscribe to our newsletter:</p>
+      <div style="display: flex; margin-top: 0.5em;">
+        <input type="email" placeholder="Your email" style="padding: 0.5em; border: none; flex: 1;">
+        <button style="background-color: #d7ccc8; color: #3e2723; border: none; padding: 0.5em 1em; cursor: pointer; font-weight: bold;">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Copyright Section -->
+  <div style="border-top: 1px solid #d7ccc8; margin-top: 2em; padding-top: 2em; text-align: center; max-width: 1200px; margin-left: auto; margin-right: auto;">
+    <p>&copy; 2025 Brew & Go. Coffee | All Rights Reserved</p>
+  </div>
+</footer>
+</body>
+</html>

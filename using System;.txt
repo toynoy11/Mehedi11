@@ -1,0 +1,17 @@
+using System;
+using SplashkitSDK;
+using system.collections.Generic;
+
+namespace   InhertianceExercise2{
+    public class program
+    {
+        public static void Main()
+        {
+              Car c1 = new Car(4, 500);
+              c1.printInfo();
+
+              Truck t1 = new Truck(4, 1000, 100);
+              t1.printInfo();
+        }
+    }
+}
